@@ -6,7 +6,7 @@ const Contact = ({ contact, deleteContact }) => {
         <div className="col-md-6">
             <div style={{ backgroundColor: CURRENTLINE }} className="card my-2">
                 <div className="card-body">
-                    <div className="row align-items-center d-flex justify-content-around">
+                    <div className="row align-items-center d-flex justify-content-start">
                         <div className="col-md-4 col-sm-4">
                             <img
                                 src={contact.photo}
@@ -30,6 +30,11 @@ const Contact = ({ contact, deleteContact }) => {
                                 <li className="list-group-item list-group-item-dark">
                                     آدرس ایمیل :{"  "}
                                     <span className="fw-bold">{contact.email}</span>
+                                </li>
+
+                                <li className="list-group-item list-group-item-dark">
+                                    شغل :{"  "}
+                                    <span className="fw-bold">{contact.job}</span>
                                 </li>
                             </ul>
                         </div>
